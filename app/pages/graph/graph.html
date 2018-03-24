@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      Thermomètre
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="home">
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-slides>
+    <ion-slide >
+      <ion-img [src]="img[0]"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img [src]="img[1]"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img [src]="img[2]"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img [src]="img[3]"></ion-img>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
